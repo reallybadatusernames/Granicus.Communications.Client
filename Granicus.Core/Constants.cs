@@ -2,14 +2,6 @@
 {
     public static class Constants
     {
-        #region Base
-
-        //public const string Uri = "https://api.govdelivery.com/";
-
-        public const string Uri = "https://stage-api.govdelivery.com/";
-        
-        #endregion
-
         #region Cloud Communication
 
         public const string Categories = "/api/account/{0}/categories.xml";

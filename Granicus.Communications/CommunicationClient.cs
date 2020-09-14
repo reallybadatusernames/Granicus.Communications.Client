@@ -18,7 +18,9 @@ namespace Granicus.Communications
 
         private string _password;
 
-        public CommunicationClient(string accountCode, string userName, string password)
+        private string _uri;
+
+        public CommunicationClient(string accountCode, string userName, string password, string uri = "https://api.govdelivery.com/")
         {
             if (string.IsNullOrEmpty(accountCode) || string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password))
                 throw new ArgumentNullException("Initialization Failed: One or more parameters is null");
@@ -26,12 +28,13 @@ namespace Granicus.Communications
             _accountCode = accountCode;
             _userName = userName;
             _password = password;
+            _uri = uri.EndsWith("/") ?  uri : uri + "/";
             _dispatcher = new RequestDispatcher();
         }
 
-        public static CommunicationClient InitializeClient(string accountCode, string userName, string password)
+        public static CommunicationClient InitializeClient(string accountCode, string userName, string password, string uri = "https://api.govdelivery.com/")
         {
-            var client = new CommunicationClient(accountCode, userName, password);
+            var client = new CommunicationClient(accountCode, userName, password, uri);
             return client;
         }
 
@@ -175,6 +178,7 @@ namespace Granicus.Communications
 
         private void setupPermissions(IAuthRequest request)
         {
+            request.Uri = _uri;
             request.AccountCode = _accountCode;
             request.UserName = _userName;
             request.Password = _password;

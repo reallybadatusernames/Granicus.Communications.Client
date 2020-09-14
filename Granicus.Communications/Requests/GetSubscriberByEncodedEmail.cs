@@ -21,13 +21,15 @@ namespace Granicus.Communications
 
             public string Password { get; set; }
 
+            public string Uri { get; set; }
+
             public string EncodedEmail { get; set; }
 
             public Response ProcessRequest()
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri(Constants.Uri);
+                    client.BaseAddress = new Uri(Uri);
                     client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(
                         "Basic",
                         Convert.ToBase64String(
@@ -59,7 +61,7 @@ namespace Granicus.Communications
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri(Constants.Uri);
+                    client.BaseAddress = new Uri(Uri);
                     client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(
                         "Basic",
                         Convert.ToBase64String(
