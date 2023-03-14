@@ -57,10 +57,6 @@
       <Project>{feb12542-5033-4cf7-a760-c2d91385ff19}</Project>
       <Name>Granicus.Communications</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Granicus.Core\Granicus.Core.csproj">
-      <Project>{753AD7E8-61E1-45B1-8147-0B622635C006}</Project>
-      <Name>Granicus.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

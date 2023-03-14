@@ -2,7 +2,10 @@
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
-using Granicus.Core.Entities;
+using Granicus.Infrastructure.Entities;
+using Granicus.Infrastructure.Requests;
+using Granicus.Infrastructure.Utilities;
+using Granicus.Infrastructure.Interfaces;
 
 namespace Granicus.Communications
 {
@@ -48,6 +51,7 @@ namespace Granicus.Communications
             setupPermissions(request);
             return _dispatcher.Dispatch<GetCategories.Request, GetCategories.Response>(request).Categories;
         }
+
 
         public async Task<List<Category>> GetCategoriesAsync()
         {

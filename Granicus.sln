@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.645
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granicus.Core", "Granicus.Core\Granicus.Core.csproj", "{753AD7E8-61E1-45B1-8147-0B622635C006}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granicus.Client", "Granicus.Client\Granicus.Client.csproj", "{CFC54177-6907-4810-8C3A-1E52DB0C9397}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granicus.Communications", "Granicus.Communications\Granicus.Communications.csproj", "{FEB12542-5033-4CF7-A760-C2D91385FF19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granicus.Infrastructure", "Granicus.Infrastructure\Granicus.Infrastructure.csproj", "{C122EDE3-4BC0-4D52-B1BB-3A8B39D72617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granicus.Communications.Core", "Granicus.Communications.Core\Granicus.Communications.Core.csproj", "{52686711-BF18-4C52-83F8-F5B19F96D1A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{753AD7E8-61E1-45B1-8147-0B622635C006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{753AD7E8-61E1-45B1-8147-0B622635C006}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{753AD7E8-61E1-45B1-8147-0B622635C006}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{753AD7E8-61E1-45B1-8147-0B622635C006}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CFC54177-6907-4810-8C3A-1E52DB0C9397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CFC54177-6907-4810-8C3A-1E52DB0C9397}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFC54177-6907-4810-8C3A-1E52DB0C9397}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +25,14 @@ Global
 		{FEB12542-5033-4CF7-A760-C2D91385FF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEB12542-5033-4CF7-A760-C2D91385FF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEB12542-5033-4CF7-A760-C2D91385FF19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C122EDE3-4BC0-4D52-B1BB-3A8B39D72617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C122EDE3-4BC0-4D52-B1BB-3A8B39D72617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C122EDE3-4BC0-4D52-B1BB-3A8B39D72617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C122EDE3-4BC0-4D52-B1BB-3A8B39D72617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52686711-BF18-4C52-83F8-F5B19F96D1A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52686711-BF18-4C52-83F8-F5B19F96D1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52686711-BF18-4C52-83F8-F5B19F96D1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52686711-BF18-4C52-83F8-F5B19F96D1A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
